@@ -6,7 +6,7 @@
 ##Working directory is set to have train and test data folders in current working directory
 readData <- function(dataName){
   if(dataName =="test" | dataName == "train"){
-    setwd("C:\\Users\\rparuchu.ORADEV\\Documents\\Data Science Tools Assignment\\UCI HAR Dataset\\")
+    setwd("C:\\UCI HAR Dataset\\")
     filedatax <- read.csv(paste(dataName, "\\X_", dataName,".txt", sep = ""), sep = "\n", header = FALSE)
     filedatay <- read.csv(paste(dataName, "\\y_", dataName,".txt", sep = ""), header = FALSE, sep = "\n")
     
